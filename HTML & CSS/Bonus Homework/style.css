@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,800&family=Rubik+Microbe&display=swap');
+
+body {
+	background-color: #C8C8C8;
+	background-color: hsl(0,0%,80%);
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+header {
+
+    margin-bottom: 30px;
+}
+h1 {
+    text-align: center;
+    
+}
+
+main {
+   
+    text-align: center;
+   
+   
+    
+}
+.firstThree {
+    text-align: center;
+    
+    margin-bottom: 25px;
+  
+}
+.movieOne {
+    border: 1px solid black;
+    display: inline-block;
+    width: 350px;
+    padding: 5px;
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+}
+
+.movieTwo {
+    border: 1px solid black;
+    display: inline-block;
+    width: 350px;
+    padding: 5px;
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik Microbe', cursive;
+
+}
+
+.movieThree {
+    border: 1px solid black;
+    display: inline-block;
+    width: 350px;
+    padding: 5px;
+    margin: 10px;
+    font-family:"RubikDistressed";
+   
+}
+
+.secondThree{
+    text-align: center;
+    
+  
+    
+}
+
+
+.movieFour {
+    border: 1px solid black;
+    display: inline-block;
+    width: 350px;
+    padding: 5px;
+    margin: 10px;
+    
+    
+}
+
+.movieFive {
+    border: 1px solid black;
+    display: inline-block;
+    width: 350px;
+    padding: 5px;
+    margin: 10px;
+   
+}
+
+.movieSix {
+    border: 1px solid black;
+    display: inline-block;
+    width: 350px;
+    padding: 5px;
+    margin: 10px;
+   
+}
+.center {
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+}
+
+h3 {
+    text-align: center;
+    margin: auto;
+}
+p {
+    display: inline-block;
+ margin-bottom: 10px;
+   
+}
+@font-face {
+   
+    src: url(./fonts/RubikDistressed-Regular.ttf);
+    font-family:"RubikDistressed";
+}

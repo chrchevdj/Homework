@@ -1,0 +1,76 @@
+body {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+header {
+   text-align: center;
+  color: blueviolet;
+  padding: 0px;
+   
+   
+}
+nav {
+ 
+  padding: 10px;
+    
+}
+
+.nav {
+  color: blueviolet;
+  padding-left: 10px;
+}
+main {
+
+       
+ }
+
+footer {
+  
+     
+ }
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+ }
+
+ #about {
+   color: blueviolet;
+  font-style: oblique;
+   
+ }
+ 
+#sapBrother {
+  color: blueviolet;
+  font-size: large;
+   
+}
+#paragraph{
+  color: blueviolet;
+  font: bolder;
+  }
+
+#bogdanci {
+  color: white;
+  width: 200px;
+  height: 200px;
+}
+li{
+  color: blueviolet;
+  
+  }
+
+#footer{
+  color: blueviolet;
+}
+
+body {
+  background-color: bisque;
+}
+ 
