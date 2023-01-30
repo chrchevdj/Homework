@@ -58,29 +58,31 @@ console.log(
 
 let positiveOrNegative = function (number) {
   if (typeof number === "number") {
-    if(number < 0){
-        return `Number is negative`
-    }else if(number > 0){
-        return `Number is positive`
+    if (number < 0) {
+      return `Number is negative`;
+    } else if (number > 0) {
+      return `Number is positive`;
     }
   } else {
     console.log("Input is not a number");
   }
 };
-let positiveOrNegativeResult = positiveOrNegative(-150)
-console.log(positiveOrNegativeResult)
+let positiveOrNegativeResult = positiveOrNegative(-150);
+console.log(positiveOrNegativeResult);
 
 console.log(`-----------------------------------`);
 
 console.log(
-    `BONUS: Create a function that takes a number through a parameter and calls all three functions for the number that was passed. It should show the results in the console. Ex: Code: getNumberStats(-25); Console: 2 Digits, Odd, Negative`
-  );
+  `BONUS: Create a function that takes a number through a parameter and calls all three functions for the number that was passed. It should show the results in the console. Ex: Code: getNumberStats(-25); Console: 2 Digits, Odd, Negative`
+);
 
-let code3Functions = function(number){
-    return `Code: \n getNumberStats(${number});\n Console: ${countOfDigits(number)} Digits,\n ${evenOrOdd(number)},\n ${positiveOrNegative(number)}`
-}
-let code3FunctionsResult = code3Functions(2)
-console.log(code3FunctionsResult)
+let code3Functions = function (number) {
+  return `Code: \n getNumberStats(${number});\n Console: ${countOfDigits(
+    number
+  )} Digits,\n ${evenOrOdd(number)},\n ${positiveOrNegative(number)}`;
+};
+let code3FunctionsResult = code3Functions(2);
+console.log(code3FunctionsResult);
 
 console.log(`-----------------------------------`);
 
@@ -93,9 +95,26 @@ Ex: Code: countVowels("Pineapple"); Console: 4 vowels
 BONUS: Provide the input from the HTML, and print the result on the HTML.
 */
 
-let countVowels = word => {
-    for(i=0; i< word.lenght; i++)
-    return `Console: ${word} vowels`
-}
-let countVowelsResult = (countVowels("Pineapple"))
-console.log(countVowelsResult)
+let paragraphs = document.getElementById("result");
+let inputs = document.getElementById("input");
+let changeBtn = document.getElementById("changeBtn");
+
+let countVowels = (str) => {
+  let vowels = "aeiouAEIOU";
+  let count = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+      count++;
+      paragraphs.innerHTML = `<p>${str[i]}</p>`;
+    }
+  }
+
+  return count;
+};
+
+changeBtn.addEventListener("click", (event) => {
+  let inputs = input.value;
+  let countVowelsResult = countVowels(inputs);
+  paragraphs.innerHTML = `<p>Number of vowels: ${countVowelsResult}</p>`;
+});
