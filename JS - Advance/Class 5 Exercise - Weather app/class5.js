@@ -12,7 +12,7 @@ Hint: use an object as a return value ( bundle the stats into one package )
 9. Create a function for printing the table for hourly stats
 */
 
-let weatherUrl = "https://api.openweathermap.org/data/2.5/forecast?q=bogdanci&units=metric&APPID=9fa272874ed1c73e31251bafeed2a69e"
+let weatherUrl = 
 
 console.log(weatherUrl)
 
